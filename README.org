@@ -34,6 +34,6 @@ The Common Lisp examples were tested with sbcl. The required common lisp package
 
 ** Windows Visual Studio Build 2013
 
-Dependencies: Python 64 bit installed in default directory. Use Nuget within VS 2013 to install Boost 1.59.0, tbb, and pthreads. The zyre, czmq, libsodium, libzmq, glog, and swigwin-3.0.8 need to be in the github directory at the same level as quickmsg.
+Dependencies: Python 64 bit installed in default directory. Use Nuget within VS 2013 to install Boost 1.59.0, tbb, glog, and pthreads. The zyre, czmq, libsodium, libzmq, glog, and swigwin-3.0.8 need to be in the github directory at the same level as quickmsg.
 
-The Swig and glog libraries are in tghe zip files in the main directory of quickmsg.
+The Swigwin 3.0.8 library is in the zip file in the main directory of quickmsg. Unzip that in the main github directory.
