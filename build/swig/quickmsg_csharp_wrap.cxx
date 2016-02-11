@@ -529,7 +529,27 @@ void SwigDirector_Service::swig_init_callbacks() {
 extern "C" {
 #endif
 
-SWIGEXPORT void SWIGSTDCALL CSharp_init(char * jarg1) {
+SWIGEXPORT void SWIGSTDCALL CSharp_init__SWIG_0(char * jarg1, char * jarg2) {
+  std::string *arg1 = 0 ;
+  std::string *arg2 = 0 ;
+  
+  if (!jarg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "null string", 0);
+    return ;
+  }
+  std::string arg1_str(jarg1);
+  arg1 = &arg1_str; 
+  if (!jarg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "null string", 0);
+    return ;
+  }
+  std::string arg2_str(jarg2);
+  arg2 = &arg2_str; 
+  quickmsg::init((std::string const &)*arg1,(std::string const &)*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_init__SWIG_1(char * jarg1) {
   std::string *arg1 = 0 ;
   
   if (!jarg1) {

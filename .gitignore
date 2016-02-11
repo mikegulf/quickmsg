@@ -12,8 +12,6 @@ x64
 *.sdf
 *.opensdf
 *.suo
-build/Debug
-build/Release
 build/packages
 build/quickmsg
 build/quickmsg.dir

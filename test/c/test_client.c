@@ -2,6 +2,7 @@
 #include <quickmsg/quickmsg_wrap.h>
 #include <stdio.h>
 #include <time.h>
+#include <Windows.h>
 
 int
 main(int argc, char** argv)
@@ -9,10 +10,10 @@ main(int argc, char** argv)
   /* No JSON to make it easier here */
   int i = 0;
   qm_client_t c;
-  struct timespec ts;
+  struct timeval ts;
   const char* req = "Hello";
   ts.tv_sec = 1;
-  ts.tv_nsec = 0;
+  ts.tv_usec = 0;
 
   const char* iface = ""; // whatever iface zyre defaults to
   qm_init("test_c_client", iface);
@@ -25,7 +26,7 @@ main(int argc, char** argv)
     }
     printf("Received response: %s\n", resp);
     free(resp);
-    nanosleep(&ts, NULL);
+    Sleep(&ts);
   }
 
   qm_client_destroy(c);

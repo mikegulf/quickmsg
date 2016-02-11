@@ -200,7 +200,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command>setlocal
 cmake -E echo "Compiling Java files..."
 if %errorlevel% neq 0 goto :cmEnd
-copy /Y C:\Users\ralph-dev2\Desktop\quickmsg_stuff\dev\quickmsg-cmaketest\swig\quickmsg\*.java C:\Users\ralph-dev2\Desktop\quickmsg_stuff\dev\quickmsg-cmaketest\swig
+copy /Y $(ProjectDir)..\swig\quickmsg\*.java $(ProjectDir)..\swig
 if %errorlevel% neq 0 goto :cmEnd
 cmake -E echo "Starting 1"
 "C:\Program Files\Java\jdk1.8.0_72\bin\javac.exe" $(ProjectDir)swig\*.java -d $(ProjectDir)
@@ -238,7 +238,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>Rpcrt4.lib;IPHLPAPI.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:/Program Files/Java/jdk1.8.0_72/lib/jawt.lib;C:/Program Files/Java/jdk1.8.0_72/lib/jvm.lib;Release/quickmsg-c.lib;libboost_date_time-vc120-mt-s-1_59.lib;libboost_system-vc120-mt-s-1_59.lib;libboost_thread-vc120-mt-s-1_59.lib;libboost_log-vc120-mt-s-1_59.lib;tbb.lib;zyre.lib;czmq.lib;glog.lib;libsodium.lib;libzmq.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)packages/tbb.4.2.3.1/build/native/lib/x64/v120/Release;$(ProjectDir)../../zyre/lib;$(ProjectDir)../../libzmq/lib;$(ProjectDir)../../libsodium/lib;$(ProjectDir)../../jsoncpp/lib;$(ProjectDir)../../glog/lib;$(ProjectDir)../../czmq/lib;$(ProjectDir)packages/boost_log-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_date_time-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_thread-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_system-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_filesystem-vc120.1.59.0.0/lib/native/address-model-64/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)packages/tbb.4.2.3.1/build/native/lib/x64/v120/Release;$(ProjectDir)../../zyre/bin/x64/Release/v120/static;$(ProjectDir)../../libzmq/bin/x64/Release/v120/static;$(ProjectDir)../../libsodium/bin/x64/Release/v120/static;$(ProjectDir)../../jsoncpp/lib;$(ProjectDir)../../glog/lib;$(ProjectDir)../../czmq/bin/x64/Release/v120/static;$(ProjectDir)packages/boost_log-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_date_time-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_thread-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_system-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_filesystem-vc120.1.59.0.0/lib/native/address-model-64/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(ProjectDir)Release/quickmsg_java.lib</ImportLibrary>
