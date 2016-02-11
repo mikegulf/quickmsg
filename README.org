@@ -32,5 +32,7 @@ See the [[test]] directory for simple language tests and usage examples for C, C
 
 The Common Lisp examples were tested with sbcl. The required common lisp packages, such as [[https://common-lisp.net/project/cl-json/][cl-json]], were installed using [[https://www.quicklisp.org/beta/][quicklisp]]
 
+** Windows Visual Studio Build 2013
 
+Dependencies: Python 64 bit installed in default directory. Use Nuget within VS 2013 to install Boost 1.59.0, tbb, and pthreads. The zyre, czmq, libsodium, libzmq, glog, and swigwin-3.0.8 need to be in the github directory at the same level as quickmsg.
 
