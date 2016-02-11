@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="../src/client_wrap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/group_node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/publisher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/publisher_wrap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/quickmsg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/quickmsg_wrap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/service.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/service_wrap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/subscriber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/subscriber_wrap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="../src/types.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7E4DC40A-792F-3185-8E98-75076CB12E7A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{04ee77ad-9ea7-49f1-8574-08adfcdbc77c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="../include/quickmsg/client.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/quickmsg/client_wrap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../src/cqm_util.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/quickmsg/ctypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/quickmsg/group_node.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/quickmsg/publisher.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/quickmsg/publisher_wrap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/quickmsg/quickmsg.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/quickmsg/quickmsg_wrap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/quickmsg/service.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/quickmsg/service_wrap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/quickmsg/subscriber.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/quickmsg/subscriber_wrap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/quickmsg/types.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

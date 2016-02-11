@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{D22D9522-756E-3E6C-B0F2-3C823B6D800B}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>quickmsg-c</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)/Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)/Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)/Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)/Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)/$(Configuration)/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)/$(Configuration)/$(ProjectName)/</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)/$(Configuration)/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)/$(Configuration)/$(ProjectName)/</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/build/MinSizeRel/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">quickmsg-c.dir/MinSizeRel/</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">quickmsg-c</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/build/RelWithDebInfo/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">quickmsg-c.dir/RelWithDebInfo/</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">quickmsg-c</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)packages/boost.1.59.0.0/lib/native/include;$(ProjectDir)packages/tbb.4.2.3.1/build/native/include;$(ProjectDir)../../pthreads.2.9.1.4/include;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog/src/windows;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;$(ProjectDir)/$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>_DEBUG;BOOST_LOG_STATIC_LINK;CMAKE_INTDIR="Debug";quickmsg_c_EXPORTS;__WINDOWS__;LIBZYRE_STATIC;LIBCZMQ_STATIC;ZMQ_STATIC;SODIUM_STATIC;__WIN32__;WIN32;_WIN32;MSWIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;BOOST_LOG_DYN_LINK;CMAKE_INTDIR=/"Debug/";quickmsg_c_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)../src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>/NODEFAULTLIB:library %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;tbb_debug.lib;zyre.lib;czmq.lib;glog.lib;libboost_date_time-vc120-mt-sgd-1_59.lib;libboost_system-vc120-mt-sgd-1_59.lib;libboost_thread-vc120-mt-sgd-1_59.lib;libboost_log-vc120-mt-sgd-1_59.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)packages/boost_date_time-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_system-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_filesystem-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_thread-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_log-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)../../czmq/lib;$(ProjectDir)../../glog/lib;$(ProjectDir)../../jsoncpp/lib;$(ProjectDir)../../libsodium/lib;$(ProjectDir)../../libzmq/lib;$(ProjectDir)../../zyre/lib;$(ProjectDir)packages/tbb.4.2.3.1/build/native/lib/x64/v120/Debug;$(ProjectDir)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(ProjectDir)Debug/quickmsg-c.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ProjectDir)Debug/quickmsg-c.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/EHsc %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)packages/boost.1.59.0.0/lib/native/include;$(ProjectDir)packages/tbb.4.2.3.1/build/native/include;$(ProjectDir)../../pthreads.2.9.1.4/include;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog/src/windows;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>__WINDOWS__;LIBZYRE_STATIC;LIBCZMQ_STATIC;ZMQ_STATIC;SODIUM_STATIC;__WIN32__;WIN32;_WIN32;SODIUM_STATIC;ZMQ_STATIC;HAVE_LIBSODIUM;LIBCZMQ_STATIC;LIBZYRE_STATIC;TBB_STATIC;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;BOOST_LOG_DYN_LINK;CMAKE_INTDIR=/"Release/";quickmsg_c_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)../src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Rpcrt4.lib;IPHLPAPI.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;tbb.lib;zyre.lib;czmq.lib;glog.lib;libboost_date_time-vc120-mt-s-1_59.lib;libboost_system-vc120-mt-s-1_59.lib;libboost_thread-vc120-mt-s-1_59.lib;libboost_log-vc120-mt-s-1_59.lib;libsodium.lib;libzmq.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)packages/boost_date_time-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_system-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_filesystem-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_thread-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_log-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)../../czmq/lib;$(ProjectDir)../../glog/lib;$(ProjectDir)../../jsoncpp/lib;$(ProjectDir)../../libsodium/lib;$(ProjectDir)../../libzmq/lib;$(ProjectDir)../../zyre/lib;$(ProjectDir)packages/tbb.4.2.3.1/build/native/lib/x64/v120/Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(ProjectDir)Release/quickmsg-c.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ProjectDir)Release/quickmsg-c.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <CustomBuildStep>
+      <Command>$(ProjectDir)../../swigwin-3.0.8/swig.exe -csharp -outdir $(ProjectDir)quickmsg_csharp/Generated -c++ -I$(ProjectDir)../src -I$(ProjectDir)../include "-IC:/Program Files/Java/jdk1.8.0_72/include" "-IC:/Program Files/Java/jdk1.8.0_72/include/win32" -I$(ProjectDir)../../zyre/include -I$(ProjectDir)../../czmq/include -I$(ProjectDir)../../libzmq/include -I$(ProjectDir)../../glog -I$(ProjectDir)../../jsoncpp/include -IC:/Python27/include -o $(ProjectDir)swig/quickmsg_csharp_wrap.cxx $(ProjectDir)../swig/quickmsg_csharp.i</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>quickmsg_csharp_wrap.cxx</Outputs>
+    </CustomBuildStep>
+    <CustomBuild>
+      <Command>$(ProjectDir)../../swigwin-3.0.8/swig.exe -csharp -outdir $(ProjectDir)quickmsg_csharp/Generated -c++ -I$(ProjectDir)../src -I$(ProjectDir)../include "-IC:/Program Files/Java/jdk1.8.0_72/include" "-IC:/Program Files/Java/jdk1.8.0_72/include/win32" -I$(ProjectDir)../../zyre/include -I$(ProjectDir)../../czmq/include -I$(ProjectDir)../../libzmq/include -I$(ProjectDir)../../glog -I$(ProjectDir)../../jsoncpp/include -IC:/Python27/include -o $(ProjectDir)swig/quickmsg_csharp_wrap.cxx $(ProjectDir)../swig/quickmsg_csharp.i</Command>
+      <Outputs>quickmsg_csharp_wrap.cxx</Outputs>
+    </CustomBuild>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -fPIC %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)packages/boost.1.59.0.0/lib/native/include;$(ProjectDir)packages/tbb.4.2.3.1/build/native/include;$(ProjectDir)../../pthreads.2.9.1.4/include;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog/src/windows;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;BOOST_LOG_DYN_LINK;CMAKE_INTDIR="MinSizeRel";quickmsg_c_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;BOOST_LOG_DYN_LINK;CMAKE_INTDIR=/"MinSizeRel/";quickmsg_c_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)../src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;MinSizeRel/quickmsg.lib;tbb.lib;zyre.lib;czmq.lib;glog.lib;C:/boost_1_58_0/stage/x64/lib/libboost_date_time-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_system-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_thread-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_log-vc120-mt-1_58.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)packages/boost_date_time-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_system-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_filesystem-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_thread-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_log-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)../../czmq/lib;$(ProjectDir)../../glog/lib;$(ProjectDir)../../jsoncpp/lib;$(ProjectDir)../../libsodium/lib;$(ProjectDir)../../libzmq/lib;$(ProjectDir)../../zyre/lib;$(ProjectDir)packages/tbb.4.2.3.1/build/native/lib/x64/v120/MinSizeRel;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(ProjectDir)MinSizeRel/quickmsg-c.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ProjectDir)MinSizeRel/quickmsg-c.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -fPIC %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)packages/boost.1.59.0.0/lib/native/include;$(ProjectDir)packages/tbb.4.2.3.1/build/native/include;$(ProjectDir)../../pthreads.2.9.1.4/include;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog/src/windows;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;BOOST_LOG_DYN_LINK;CMAKE_INTDIR="RelWithDebInfo";quickmsg_c_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;BOOST_LOG_DYN_LINK;CMAKE_INTDIR=/"RelWithDebInfo/";quickmsg_c_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(ProjectDir)../src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;RelWithDebInfo/quickmsg.lib;tbb.lib;zyre.lib;czmq.lib;glog.lib;C:/boost_1_58_0/stage/x64/lib/libboost_date_time-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_system-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_thread-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_log-vc120-mt-1_58.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)packages/boost_date_time-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_system-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_filesystem-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_thread-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_log-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)../../czmq/lib;$(ProjectDir)../../glog/lib;$(ProjectDir)../../jsoncpp/lib;$(ProjectDir)../../libsodium/lib;$(ProjectDir)../../libzmq/lib;$(ProjectDir)../../zyre/lib;$(ProjectDir)packages/tbb.4.2.3.1/build/native/lib/x64/v120/RelWithDebInfo;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(ProjectDir)RelWithDebInfo/quickmsg-c.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ProjectDir)RelWithDebInfo/quickmsg-c.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="../src/client.cpp" />
+    <ClCompile Include="../src/group_node.cpp" />
+    <ClCompile Include="../src/publisher.cpp" />
+    <ClCompile Include="../src/quickmsg.cpp" />
+    <ClCompile Include="../src/service.cpp" />
+    <ClCompile Include="../src/subscriber.cpp" />
+    <ClCompile Include="../src/types.cpp" />
+    <ClCompile Include="../src/quickmsg_wrap.cpp" />
+    <ClCompile Include="../src/publisher_wrap.cpp" />
+    <ClCompile Include="../src/subscriber_wrap.cpp" />
+    <ClCompile Include="../src/client_wrap.cpp" />
+    <ClCompile Include="../src/service_wrap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="../include/quickmsg/client.hpp" />
+    <ClInclude Include="../include/quickmsg/client_wrap.h" />
+    <ClInclude Include="../include/quickmsg/ctypes.h" />
+    <ClInclude Include="../include/quickmsg/group_node.hpp" />
+    <ClInclude Include="../include/quickmsg/publisher.hpp" />
+    <ClInclude Include="../include/quickmsg/publisher_wrap.h" />
+    <ClInclude Include="../include/quickmsg/quickmsg.hpp" />
+    <ClInclude Include="../include/quickmsg/quickmsg_wrap.h" />
+    <ClInclude Include="../include/quickmsg/service.hpp" />
+    <ClInclude Include="../include/quickmsg/service_wrap.h" />
+    <ClInclude Include="../include/quickmsg/subscriber.hpp" />
+    <ClInclude Include="../include/quickmsg/subscriber_wrap.h" />
+    <ClInclude Include="../include/quickmsg/types.hpp" />
+    <ClInclude Include="../src/cqm_util.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)/Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

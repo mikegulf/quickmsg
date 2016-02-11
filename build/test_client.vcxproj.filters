@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\ARL\dev\quickmsg-cmaketest\test\cpp\test_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\ARL\dev\quickmsg-cmaketest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7E4DC40A-792F-3185-8E98-75076CB12E7A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

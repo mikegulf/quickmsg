@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{F4D80175-9BB1-32EC-B530-718AFDA378C6}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>quickmsg_java</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)/Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)/Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)/Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)/Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)/$(Configuration)/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)/$(Configuration)/$(ProjectName)/</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)/$(Configuration)/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)/$(Configuration)/$(ProjectName)/</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(ProjectDir)MinSizeRel/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">quickmsg_java.dir/MinSizeRel/</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">quickmsg_java</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(ProjectDir)RelWithDebInfo/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">quickmsg_java.dir/RelWithDebInfo/</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">quickmsg_java</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -fPIC %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)packages/pthreads.2.9.1.4/build/native/include;$(ProjectDir)packages/boost.1.59.0.0/lib/native/include;$(ProjectDir)../src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;$(ProjectDir)Release;$(ProjectDir)packages/tbb.4.2.3.1/build/native/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>_DEBUG;CMAKE_INTDIR="Debug";quickmsg_java_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;CMAKE_INTDIR=/"Debug/";quickmsg_java_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;C:/ARL/dev/zyre/include;C:/ARL/dev/czmq/include;C:/ARL/dev/libzmq/include;C:/ARL/dev/glog;C:/ARL/dev/jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;C:/ARL/dev/zyre/include;C:/ARL/dev/czmq/include;C:/ARL/dev/libzmq/include;C:/ARL/dev/glog;C:/ARL/dev/jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+cmake -E echo "Compiling Java files..."
+if %errorlevel% neq 0 goto :cmEnd
+copy /Y C:\Users\ralph-dev2\Desktop\quickmsg_stuff\dev\quickmsg-cmaketest\swig\quickmsg\*.java $(ProjectDir)..\swig
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Java\jdk1.8.0_72\bin\javac.exe" $(ProjectDir)..\swig\*.java -d $(ProjectDir)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E echo "Creating jar file..."
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Java\jdk1.8.0_72\bin\jar.exe" cvf quickmsg.jar quickmsg
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+cmake -E echo "Creating native jar file... in native/windows/x86_64"
+if %errorlevel% neq 0 goto :cmEnd
+mkdir -p native\windows\x86_64
+copy /Y $(ProjectDir)Debug\quickmsg_java.dll native\windows\x86_64
+if %errorlevel% neq 0 goto :cmEnd
+copy /Y $(ProjectDir)Debug\quickmsg.dll native\windows\x86_64
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Java\jdk1.8.0_72\bin\jar.exe" cMf $(ProjectDir)quickmsg-native.jar native
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;jawt.lib;jvm.lib;quickmsg.lib;libboost_date_time-vc120-mt-s-1_59.lib;libboost_system-vc120-mt-s-1_59.lib;libboost_thread-vc120-mt-s-1_59.lib;libboost_log-vc120-mt-s-1_59.lib;tbb.lib;zyre.lib;czmq.lib;glog.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)packages/tbb.4.2.3.1/build/native/lib/x64/v120/Release;$(ProjectDir)../../zyre/lib;$(ProjectDir)../../libzmq/lib;$(ProjectDir)../../libsodium/lib;$(ProjectDir)../../jsoncpp/lib;$(ProjectDir)../../glog/lib;$(ProjectDir)../../czmq/lib;$(ProjectDir)packages/boost_log-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_date_time-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_thread-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_system-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_filesystem-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(ProjectDir)Debug/quickmsg_java.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ProjectDir)Debug/quickmsg_java.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/EHsc %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)packages/pthreads.2.9.1.4/build/native/include;$(ProjectDir)packages/boost.1.59.0.0/lib/native/include;$(ProjectDir)../src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;$(ProjectDir)Release;$(ProjectDir)packages/tbb.4.2.3.1/build/native/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>__WINDOWS__;LIBZYRE_STATIC;LIBCZMQ_STATIC;ZMQ_STATIC;SODIUM_STATIC;__WIN32__;WIN32;_WIN32;MSWIN32;NDEBUG;CMAKE_INTDIR="Release";quickmsg_java_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR=/"Release/";quickmsg_java_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;C:/ARL/dev/zyre/include;C:/ARL/dev/czmq/include;C:/ARL/dev/libzmq/include;C:/ARL/dev/glog;C:/ARL/dev/jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;C:/ARL/dev/zyre/include;C:/ARL/dev/czmq/include;C:/ARL/dev/libzmq/include;C:/ARL/dev/glog;C:/ARL/dev/jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+cmake -E echo "Compiling Java files..."
+if %errorlevel% neq 0 goto :cmEnd
+copy /Y C:\Users\ralph-dev2\Desktop\quickmsg_stuff\dev\quickmsg-cmaketest\swig\quickmsg\*.java C:\Users\ralph-dev2\Desktop\quickmsg_stuff\dev\quickmsg-cmaketest\swig
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E echo "Starting 1"
+"C:\Program Files\Java\jdk1.8.0_72\bin\javac.exe" $(ProjectDir)swig\*.java -d $(ProjectDir)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E echo "Creating jar file..."
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Java\jdk1.8.0_72\bin\jar.exe" cvf quickmsg.jar quickmsg
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+cmake -E echo "Creating native jar file... in native/windows/x86_64"
+if %errorlevel% neq 0 goto :cmEnd
+mkdir native\windows\x86_64
+cmake -E echo "Starting 2"
+copy /Y $(ProjectDir)Release\quickmsg_java.dll native\windows\x86_64
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E echo "Starting 3"
+copy /Y $(ProjectDir)Release\quickmsg-c.dll native\windows\x86_64
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E echo "Starting 4"
+"C:\Program Files\Java\jdk1.8.0_72\bin\jar.exe" cMf $(ProjectDir)quickmsg-native.jar native
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Rpcrt4.lib;IPHLPAPI.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:/Program Files/Java/jdk1.8.0_72/lib/jawt.lib;C:/Program Files/Java/jdk1.8.0_72/lib/jvm.lib;Release/quickmsg-c.lib;libboost_date_time-vc120-mt-s-1_59.lib;libboost_system-vc120-mt-s-1_59.lib;libboost_thread-vc120-mt-s-1_59.lib;libboost_log-vc120-mt-s-1_59.lib;tbb.lib;zyre.lib;czmq.lib;glog.lib;libsodium.lib;libzmq.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)packages/tbb.4.2.3.1/build/native/lib/x64/v120/Release;$(ProjectDir)../../zyre/lib;$(ProjectDir)../../libzmq/lib;$(ProjectDir)../../libsodium/lib;$(ProjectDir)../../jsoncpp/lib;$(ProjectDir)../../glog/lib;$(ProjectDir)../../czmq/lib;$(ProjectDir)packages/boost_log-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_date_time-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_thread-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_system-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_filesystem-vc120.1.59.0.0/lib/native/address-model-64/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(ProjectDir)Release/quickmsg_java.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ProjectDir)Release/quickmsg_java.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -fPIC %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;C:/ARL/dev/zyre/include;C:/ARL/dev/czmq/include;C:/ARL/dev/libzmq/include;C:/ARL/dev/glog;C:/ARL/dev/jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR="MinSizeRel";quickmsg_java_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR=/"MinSizeRel/";quickmsg_java_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;C:/ARL/dev/zyre/include;C:/ARL/dev/czmq/include;C:/ARL/dev/libzmq/include;C:/ARL/dev/glog;C:/ARL/dev/jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;C:/ARL/dev/zyre/include;C:/ARL/dev/czmq/include;C:/ARL/dev/libzmq/include;C:/ARL/dev/glog;C:/ARL/dev/jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+cmake -E echo "Compiling Java files..."
+if %errorlevel% neq 0 goto :cmEnd
+copy /Y C:\Users\ralph-dev2\Desktop\quickmsg_stuff\dev\quickmsg-cmaketest\swig\quickmsg\*.java $(ProjectDir)..\swig
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Java\jdk1.8.0_72\bin\javac.exe" $(ProjectDir)..\swig\*.java -d $(ProjectDir)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E echo "Creating jar file..."
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Java\jdk1.8.0_72\bin\jar.exe" cvf quickmsg.jar quickmsg
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+cmake -E echo "Creating native jar file... in native\windows\x86_64"
+if %errorlevel% neq 0 goto :cmEnd
+mkdir native\windows\x86_64
+copy /Y $(ProjectDir)MinSizeRel\quickmsg_java.dll native\windows\x86_64
+if %errorlevel% neq 0 goto :cmEnd
+copy /Y $(ProjectDir)MinSizeRel\quickmsg.dll native\windows\x86_64
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Java\jdk1.8.0_72\bin\jar.exe" cMf $(ProjectDir)quickmsg-native.jar native
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:/Program Files/Java/jdk1.8.0_72/lib/jawt.lib;C:/Program Files/Java/jdk1.8.0_72/lib/jvm.lib;MinSizeRel/quickmsg.lib;C:/boost_1_58_0/stage/x64/lib/libboost_date_time-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_system-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_thread-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_log-vc120-mt-1_58.lib;tbb.lib;zyre.lib;czmq.lib;glog.lib;C:/boost_1_58_0/stage/x64/lib/libboost_date_time-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_system-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_thread-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_log-vc120-mt-1_58.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(ProjectDir)MinSizeRel/quickmsg_java.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ProjectDir)MinSizeRel/quickmsg_java.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> -std=c++11 -fPIC %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;C:/ARL/dev/zyre/include;C:/ARL/dev/czmq/include;C:/ARL/dev/libzmq/include;C:/ARL/dev/glog;C:/ARL/dev/jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR="RelWithDebInfo";quickmsg_java_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;CMAKE_INTDIR=/"RelWithDebInfo/";quickmsg_java_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;C:/ARL/dev/zyre/include;C:/ARL/dev/czmq/include;C:/ARL/dev/libzmq/include;C:/ARL/dev/glog;C:/ARL/dev/jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;C:/ARL/dev/zyre/include;C:/ARL/dev/czmq/include;C:/ARL/dev/libzmq/include;C:/ARL/dev/glog;C:/ARL/dev/jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+cmake -E echo "Compiling Java files..."
+if %errorlevel% neq 0 goto :cmEnd
+copy /Y C:\Users\ralph-dev2\Desktop\quickmsg_stuff\dev\quickmsg-cmaketest\swig\quickmsg\*.java C:\Users\ralph-dev2\Desktop\quickmsg_stuff\dev\quickmsg-cmaketest\swig
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Java\jdk1.8.0_72\bin\javac.exe" $(ProjectDir)swig\*.java -d $(ProjectDir)
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E echo "Creating jar file..."
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Java\jdk1.8.0_72\bin\jar.exe" cvf quickmsg.jar quickmsg
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+cmake -E echo "Creating native jar file... in native\windows\x86_64"
+if %errorlevel% neq 0 goto :cmEnd
+mkdir native\windows\x86_64
+copy /Y $(ProjectDir)RelWithDebInfo\quickmsg_java.dll native\windows\x86_64
+if %errorlevel% neq 0 goto :cmEnd
+copy /Y $(ProjectDir)RelWithDebInfo\quickmsg.dll native\windows\x86_64
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Java\jdk1.8.0_72\bin\jar.exe" cMf $(ProjectDir)quickmsg-native.jar native
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:/Program Files/Java/jdk1.8.0_72/lib/jawt.lib;C:/Program Files/Java/jdk1.8.0_72/lib/jvm.lib;RelWithDebInfo/quickmsg.lib;C:/boost_1_58_0/stage/x64/lib/libboost_date_time-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_system-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_thread-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_log-vc120-mt-1_58.lib;tbb.lib;zyre.lib;czmq.lib;glog.lib;C:/boost_1_58_0/stage/x64/lib/libboost_date_time-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_system-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_thread-vc120-mt-1_58.lib;C:/boost_1_58_0/stage/x64/lib/libboost_log-vc120-mt-1_58.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(ProjectDir)RelWithDebInfo/quickmsg_java.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(ProjectDir)RelWithDebInfo/quickmsg_java.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="../src/client.cpp" />
+    <ClCompile Include="../src/group_node.cpp" />
+    <ClCompile Include="../src/publisher.cpp" />
+    <ClCompile Include="../src/quickmsg.cpp" />
+    <ClCompile Include="../src/service.cpp" />
+    <ClCompile Include="../src/subscriber.cpp" />
+    <ClCompile Include="../src/types.cpp" />
+    <ClCompile Include="$(ProjectDir)swig/quickmsg_javaJAVA_wrap.cxx" />
+    <ClCompile Include="C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src/quickmsg_java.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="quickmsg-c.vcxproj">
+      <Project>{d22d9522-756e-3e6c-b0f2-3c823b6d800b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="../src/cqm_util.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)/Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

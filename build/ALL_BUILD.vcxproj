@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{C94E4848-6129-3396-B973-DDB800207D10}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ARL\dev\quickmsg-cmaketest\src;C:\ARL\dev\quickmsg-cmaketest\include;C:\Program Files\Java\jdk1.8.0_51\include;C:\Program Files\Java\jdk1.8.0_51\include\win32;C:\ARL\dev\zyre\include;C:\ARL\dev\czmq\include;C:\ARL\dev\libzmq\include;C:\ARL\dev\glog;C:\ARL\dev\jsoncpp\include;C:\Python27\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ARL\dev\quickmsg-cmaketest\src;C:\ARL\dev\quickmsg-cmaketest\include;C:\Program Files\Java\jdk1.8.0_51\include;C:\Program Files\Java\jdk1.8.0_51\include\win32;C:\ARL\dev\zyre\include;C:\ARL\dev\czmq\include;C:\ARL\dev\libzmq\include;C:\ARL\dev\glog;C:\ARL\dev\jsoncpp\include;C:\Python27\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ARL\dev\quickmsg-cmaketest\src;C:\ARL\dev\quickmsg-cmaketest\include;C:\Program Files\Java\jdk1.8.0_51\include;C:\Program Files\Java\jdk1.8.0_51\include\win32;C:\ARL\dev\zyre\include;C:\ARL\dev\czmq\include;C:\ARL\dev\libzmq\include;C:\ARL\dev\glog;C:\ARL\dev\jsoncpp\include;C:\Python27\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ARL\dev\quickmsg-cmaketest\src;C:\ARL\dev\quickmsg-cmaketest\include;C:\Program Files\Java\jdk1.8.0_51\include;C:\Program Files\Java\jdk1.8.0_51\include\win32;C:\ARL\dev\zyre\include;C:\ARL\dev\czmq\include;C:\ARL\dev\libzmq\include;C:\ARL\dev\glog;C:\ARL\dev\jsoncpp\include;C:\Python27\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\ARL\dev\quickmsg-cmaketest\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/ARL/dev/quickmsg-cmaketest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\etc\cmake-3.4.2-win32-x86\bin\cmake.exe -HC:/ARL/dev/quickmsg-cmaketest -BC:/ARL/dev/quickmsg-cmaketest/build --check-stamp-file C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/ARL/dev/quickmsg-cmaketest/CMakeLists.txt;C:\ARL\dev\quickmsg-cmaketest\CMakeLists.txt;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeSystem.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeCCompiler.cmake;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeCXXCompiler.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeRCCompiler.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPkgConfig.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindBoost.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindJava.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeFindJavaCommon.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindJNI.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeFindJavaCommon.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindDoxygen.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\ARL\dev\quickmsg-cmaketest\quickmsg.pc.in;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindSWIG.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\UseSWIG.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPythonLibs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeFindFrameworks.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\SelectLibraryConfigurations.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\UseJava.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\ARL\dev\quickmsg-cmaketest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/ARL/dev/quickmsg-cmaketest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\etc\cmake-3.4.2-win32-x86\bin\cmake.exe -HC:/ARL/dev/quickmsg-cmaketest -BC:/ARL/dev/quickmsg-cmaketest/build --check-stamp-file C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/ARL/dev/quickmsg-cmaketest/CMakeLists.txt;C:\ARL\dev\quickmsg-cmaketest\CMakeLists.txt;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeSystem.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeCCompiler.cmake;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeCXXCompiler.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeRCCompiler.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPkgConfig.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindBoost.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindJava.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeFindJavaCommon.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindJNI.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeFindJavaCommon.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindDoxygen.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\ARL\dev\quickmsg-cmaketest\quickmsg.pc.in;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindSWIG.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\UseSWIG.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPythonLibs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeFindFrameworks.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\SelectLibraryConfigurations.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\UseJava.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\ARL\dev\quickmsg-cmaketest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/ARL/dev/quickmsg-cmaketest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\etc\cmake-3.4.2-win32-x86\bin\cmake.exe -HC:/ARL/dev/quickmsg-cmaketest -BC:/ARL/dev/quickmsg-cmaketest/build --check-stamp-file C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/ARL/dev/quickmsg-cmaketest/CMakeLists.txt;C:\ARL\dev\quickmsg-cmaketest\CMakeLists.txt;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeSystem.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeCCompiler.cmake;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeCXXCompiler.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeRCCompiler.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPkgConfig.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindBoost.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindJava.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeFindJavaCommon.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindJNI.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeFindJavaCommon.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindDoxygen.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\ARL\dev\quickmsg-cmaketest\quickmsg.pc.in;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindSWIG.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\UseSWIG.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPythonLibs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeFindFrameworks.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\SelectLibraryConfigurations.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\UseJava.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\ARL\dev\quickmsg-cmaketest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/ARL/dev/quickmsg-cmaketest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\etc\cmake-3.4.2-win32-x86\bin\cmake.exe -HC:/ARL/dev/quickmsg-cmaketest -BC:/ARL/dev/quickmsg-cmaketest/build --check-stamp-file C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/ARL/dev/quickmsg-cmaketest/CMakeLists.txt;C:\ARL\dev\quickmsg-cmaketest\CMakeLists.txt;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeSystem.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeCCompiler.cmake;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeCXXCompiler.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\3.4.2\CMakeRCCompiler.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPkgConfig.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindBoost.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindJava.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeFindJavaCommon.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindJNI.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeFindJavaCommon.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindDoxygen.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\ARL\dev\quickmsg-cmaketest\quickmsg.pc.in;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindSWIG.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\UseSWIG.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPythonLibs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeFindFrameworks.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\SelectLibraryConfigurations.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\UseJava.cmake;C:\etc\cmake-3.4.2-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\ARL\dev\quickmsg-cmaketest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\ARL\dev\quickmsg-cmaketest\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/ARL/dev/quickmsg-cmaketest/build/ZERO_CHECK.vcxproj">
+      <Project>C89B5583-B0E4-3C17-8049-8243C9DBEBE8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/ARL/dev/quickmsg-cmaketest/build/_quickmsg_py.vcxproj">
+      <Project>4C8B13C5-A7F5-3D44-AAB4-480D84210660</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/ARL/dev/quickmsg-cmaketest/build/quickmsg.vcxproj">
+      <Project>62BFD6BA-8D2F-33F1-8215-D40EAEA678CF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/ARL/dev/quickmsg-cmaketest/build/quickmsg-c.vcxproj">
+      <Project>D22D9522-756E-3E6C-B0F2-3C823B6D800B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/ARL/dev/quickmsg-cmaketest/build/quickmsg_java.vcxproj">
+      <Project>F4D80175-9BB1-32EC-B530-718AFDA378C6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/ARL/dev/quickmsg-cmaketest/build/test_cclient.vcxproj">
+      <Project>0C8EF4C4-2B04-31F8-BE7D-05AA889F109B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/ARL/dev/quickmsg-cmaketest/build/test_client.vcxproj">
+      <Project>12D90B80-FE15-3AEB-B346-DB580F1A16BF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/ARL/dev/quickmsg-cmaketest/build/test_cpub.vcxproj">
+      <Project>B1ED6F6D-E307-340A-AE99-43CCB91B11C2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/ARL/dev/quickmsg-cmaketest/build/test_cservice.vcxproj">
+      <Project>836B76D1-9ACB-3F0B-B57D-78B464FE19F9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/ARL/dev/quickmsg-cmaketest/build/test_csub.vcxproj">
+      <Project>E3391082-0327-37CD-A793-009BD06AB218</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/ARL/dev/quickmsg-cmaketest/build/test_node.vcxproj">
+      <Project>AB5EBEC2-68CA-3072-B18E-07C03EA8901F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/ARL/dev/quickmsg-cmaketest/build/test_pub.vcxproj">
+      <Project>6D3F1B4E-7754-3059-9F5F-4304E3D9F805</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/ARL/dev/quickmsg-cmaketest/build/test_service.vcxproj">
+      <Project>94FB6BAF-AF09-3E53-83FA-59E047122EE6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/ARL/dev/quickmsg-cmaketest/build/test_sub.vcxproj">
+      <Project>5680AD39-6011-325F-8AAB-F7583BE91AA5</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

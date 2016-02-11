@@ -1,0 +1,10 @@
+prefix=C:/ARL/dev/quickmsg-cmaketest
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: quickmsg
+Description: A small library to facilitate open messaging between a set of components.
+Version: 0.0.10
+Cflags: -I${includedir}
+Libs: -L${libdir} -lquickmsg
