@@ -27,3 +27,4 @@ build/test_cservice.dir
 build/test_pub.dir
 build/test_sub.dir
 build/test_service.dir
+/.project

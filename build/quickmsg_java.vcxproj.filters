@@ -25,7 +25,7 @@
     <ClCompile Include="../src/types.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src/quickmsg_java.cpp">
+    <ClCompile Include="..\src\quickmsg_java.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

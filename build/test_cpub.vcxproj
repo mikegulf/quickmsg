@@ -85,7 +85,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)..src;$(ProjectDir)..include;C:\Program Files\Java\jdk1.8.0_72\include;C:\Program Files\Java\jdk1.8.0_72\include\win32;C:\ARL\dev\zyre\include;C:\ARL\dev\czmq\include;C:\ARL\dev\libzmq\include;C:\ARL\dev\glog;C:\ARL\dev\jsoncpp\include;C:\Python27\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src;$(ProjectDir)..\include;C:\Program Files\Java\jdk1.8.0_72\include;C:\Program Files\Java\jdk1.8.0_72\include\win32;$(ProjectDir)..\..\zyre\include;$(ProjectDir)..\..\czmq\include;$(ProjectDir)..\..\libzmq\include;$(ProjectDir)..\..\glog;$(ProjectDir)..\..\jsoncpp\include;C:\Python27\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>

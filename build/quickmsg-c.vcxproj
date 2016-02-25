@@ -85,17 +85,17 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(ProjectDir)packages/boost.1.59.0.0/lib/native/include;$(ProjectDir)packages/tbb.4.2.3.1/build/native/include;$(ProjectDir)../../pthreads.2.9.1.4/include;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog/src/windows;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;$(ProjectDir)/$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)packages/boost.1.59.0.0/lib/native/include;$(ProjectDir)packages/tbb.4.2.3.1/build/native/include;$(ProjectDir)packages/pthreads.2.9.1.4/build/native/include;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog/src/windows;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;$(ProjectDir)/$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <CompileAs>CompileAsCpp</CompileAs>
+      <CompileAs>Default</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <PreprocessorDefinitions>_DEBUG;BOOST_LOG_STATIC_LINK;CMAKE_INTDIR="Debug";quickmsg_c_EXPORTS;__WINDOWS__;LIBZYRE_STATIC;LIBCZMQ_STATIC;ZMQ_STATIC;SODIUM_STATIC;__WIN32__;WIN32;_WIN32;MSWIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MSWIN32;NDEBUG;__WINDOWS__;LIBZYRE_STATIC;LIBCZMQ_STATIC;ZMQ_STATIC;SODIUM_STATIC;__WIN32__;WIN32;_WIN32;HAVE_LIBSODIUM;TBB_STATIC;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
@@ -113,10 +113,10 @@
     <Link>
       <AdditionalOptions>/NODEFAULTLIB:library %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;tbb_debug.lib;zyre.lib;czmq.lib;glog.lib;libboost_date_time-vc120-mt-sgd-1_59.lib;libboost_system-vc120-mt-sgd-1_59.lib;libboost_thread-vc120-mt-sgd-1_59.lib;libboost_log-vc120-mt-sgd-1_59.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)packages/boost_date_time-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_system-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_filesystem-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_thread-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_log-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)../../czmq/lib;$(ProjectDir)../../glog/lib;$(ProjectDir)../../jsoncpp/lib;$(ProjectDir)../../libsodium/lib;$(ProjectDir)../../libzmq/lib;$(ProjectDir)../../zyre/lib;$(ProjectDir)packages/tbb.4.2.3.1/build/native/lib/x64/v120/Debug;$(ProjectDir)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)packages/boost_date_time-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_system-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_filesystem-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_thread-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_log-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)../../glog/lib;$(ProjectDir)../../jsoncpp/bin/x64/Debug/v120/static;$(ProjectDir)../../libsodium/bin/x64/Debug/v120/static;$(ProjectDir)../../libzmq/bin/x64/Debug/v120/static;$(ProjectDir)../../zyre/bin/x64/Debug/v120/static;$(ProjectDir)packages/tbb.4.2.3.1/build/native/lib/x64/v120/Debug;$(ProjectDir)../../czmq/bin/x64/Debug/v120/static;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>$(ProjectDir)Debug/quickmsg-c.lib</ImportLibrary>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
       <ProgramDataBaseFile>$(ProjectDir)Debug/quickmsg-c.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
@@ -131,13 +131,13 @@
       <AdditionalOptions>/EHsc %(AdditionalOptions)</AdditionalOptions>
       <AdditionalIncludeDirectories>$(ProjectDir)packages/boost.1.59.0.0/lib/native/include;$(ProjectDir)packages/tbb.4.2.3.1/build/native/include;$(ProjectDir)packages/pthreads.2.9.1.4/build/native/include;C:/Users/ralph-dev2/Desktop/quickmsg_stuff/dev/quickmsg-cmaketest/src;$(ProjectDir)../include;C:/Program Files/Java/jdk1.8.0_72/include;C:/Program Files/Java/jdk1.8.0_72/include/win32;$(ProjectDir)../../zyre/include;$(ProjectDir)../../czmq/include;$(ProjectDir)../../libzmq/include;$(ProjectDir)../../glog/src/windows;$(ProjectDir)../../glog;$(ProjectDir)../../jsoncpp/include;C:/Python27/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
-      <CompileAs>CompileAsCpp</CompileAs>
+      <CompileAs>Default</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <PreprocessorDefinitions>__WINDOWS__;LIBZYRE_STATIC;LIBCZMQ_STATIC;ZMQ_STATIC;SODIUM_STATIC;__WIN32__;WIN32;_WIN32;SODIUM_STATIC;ZMQ_STATIC;HAVE_LIBSODIUM;LIBCZMQ_STATIC;LIBZYRE_STATIC;TBB_STATIC;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__WINDOWS__;LIBZYRE_STATIC;LIBCZMQ_STATIC;ZMQ_STATIC;SODIUM_STATIC;__WIN32__;WIN32;_WIN32;HAVE_LIBSODIUM;TBB_STATIC;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
@@ -160,7 +160,7 @@
       <AdditionalLibraryDirectories>$(ProjectDir)packages/boost_date_time-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_system-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_filesystem-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_thread-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)packages/boost_log-vc120.1.59.0.0/lib/native/address-model-64/lib;$(ProjectDir)../../czmq/bin/x64/Release/v120/static;$(ProjectDir)../../glog/lib;$(ProjectDir)../../jsoncpp/bin/x64/Release/v120/static;$(ProjectDir)../../libsodium/bin/x64/Release/v120/static;$(ProjectDir)../../libzmq/bin/x64/Release/v120/static;$(ProjectDir)../../zyre/bin/x64/Release/v120/static;$(ProjectDir)packages/tbb.4.2.3.1/build/native/lib/x64/v120/Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>$(ProjectDir)Release/quickmsg-c.lib</ImportLibrary>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
       <ProgramDataBaseFile>$(ProjectDir)Release/quickmsg-c.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
@@ -305,5 +305,7 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)/Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\libzmq_vc120.4.2.0.0\build\native\libzmq_vc120.targets" Condition="Exists('packages\libzmq_vc120.4.2.0.0\build\native\libzmq_vc120.targets')" />
+    <Import Project="packages\czmq_vc120.3.0.1.0\build\native\czmq_vc120.targets" Condition="Exists('packages\czmq_vc120.3.0.1.0\build\native\czmq_vc120.targets')" />
   </ImportGroup>
 </Project>
